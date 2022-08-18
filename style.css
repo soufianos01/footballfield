@@ -1,11 +1,41 @@
 .up-left,
 .up-right,
 .down-left,
-.down-right {
+.down-right,
+.ccu-left,
+.ccu-right,
+.ccd-left,
+.ccd-right,
+.ccc-left,
+.ccc-right {
   display: grid;
   grid-gap: 2px;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
+}
+
+.ccc-left {
+  grid-area: 6 / 6 / span 10 / span 5;
+}
+
+.ccc-right {
+  grid-area: 6 / 16 / span 10 / span 5;
+}
+
+.ccu-left {
+  grid-area: 1 / 5 / span 5 / span 8;
+}
+
+.ccu-right {
+  grid-area: 1 / 14 / span 5 / span 8;
+}
+
+.ccd-left {
+  grid-area: 16 / 5 / span 5 / span 8;
+}
+
+.ccd-right {
+  grid-area: 16 / 14 / span 5 / span 8;
 }
 
 .up-left {
@@ -78,19 +108,36 @@
   grid-area: 17 / 24 / span 4 / span 2;
 }
 
-.rect {
-  z-index: 100;
-  border: 1px dotted #fff5e1;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.1;
-  cursor: pointer;
-  margin: 0.3px;
+#ccl {
+  grid-area: 5 / 11 / span 12 / span 5;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+#ccr {
+  grid-area: 5 / 11 / span 12 / span 5;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 
-.rect:hover {
+.rect,
+.circle {
   border: 1px dotted #fff5e1;
-  border-radius: 10px;
   background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.rect:hover,
+.circle:hover {
   opacity: 0.3;
+}
+
+.circle {
+  border-radius: 50%;
+  opacity: 0.05;
+  z-index: 100;
+}
+
+.rect {
+  z-index: 100;
+  border-radius: 10px;
+  margin: 0.3px;
+  opacity: 0.02;
 }
