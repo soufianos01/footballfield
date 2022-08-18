@@ -119,19 +119,18 @@
 
 .rect,
 .circle {
-  border: 1px dotted #fff5e1;
-  background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
 .rect:hover,
 .circle:hover {
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.318);
+  opacity: 0.8;
 }
 
 .circle {
   border-radius: 50%;
-  opacity: 0.05;
+  opacity: 0.6;
   z-index: 100;
 }
 
@@ -139,5 +138,26 @@
   z-index: 100;
   border-radius: 10px;
   margin: 0.3px;
-  opacity: 0.02;
+  opacity: 0.6;
+}
+
+#ul1 {
+  background-image: url(./images/adidas_logo.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#ccd-left2 {
+  background-image: url(./images/Frankfurter_Allgemeine_logo.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#ccl {
+  background-image: url(./images/Google_Logo.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
