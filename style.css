@@ -157,7 +157,7 @@
 
 #ccl {
   background-image: url(./images/Google_Logo.png);
-  background-position: center;
-  background-size: 100%;
+  background-position: 0% 50%;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
