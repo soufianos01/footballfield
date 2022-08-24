@@ -38,6 +38,7 @@ body {
   position: relative;
   width: 75%;
   transition: all 1s ease;
+  display: flex;
 }
 
 #field-container::before {

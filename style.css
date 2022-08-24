@@ -161,3 +161,48 @@
   background-size: 50%;
   background-repeat: no-repeat;
 }
+
+#left-sidebar, #right-sidebar {
+  width: 5%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#right-goal, #left-goal {
+  width: 2%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty {
+  height: 47%;
+}
+.goal-rect {
+  height: 6%;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.right-rect {
+  border-right: 3px solid #fff;
+}
+.left-rect {
+  border-left: 3px solid #fff;
+}
+
+.sidebar-empty {
+  height: 20%;
+}
+.sidebar-ads-right, .sidebar-ads-left {
+  height: 60%;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+}
+
+#upper-ads {
+  height: 10%;
+  background-color: greenyellow;
+  width: 100%;
+}
